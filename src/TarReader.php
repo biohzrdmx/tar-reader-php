@@ -54,7 +54,6 @@ class TarReader {
 			break;
 			default:
 				throw new InvalidArgumentException('Unsupported file format');
-			break;
 		}
 	}
 
