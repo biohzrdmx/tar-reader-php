@@ -7,7 +7,7 @@ With TarReader you can browse the contents of a tarball, not just extract it.
 
 ### Basic usage
 
-First require `biohzrdmx/tar-reader` with Composer.
+First require `biohzrdmx/tar-reader-php` with Composer.
 
 Then just create a `TarReader` instance passing an archive path:
 
