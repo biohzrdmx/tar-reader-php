@@ -1,0 +1,35 @@
+{
+  "name": "biohzrdmx/tar-reader-php",
+  "description": "Tar file reading library",
+  "version": "1.0",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "biohzrdmx",
+      "email": "hi@biohzrdmx.me",
+      "homepage": "https://biohzrdmx.me"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ext-bz2": "*",
+    "ext-gz": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "TarReader\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TarReader\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "analyse": "phpstan analyse --configuration phpstan.neon --memory-limit 1G --level 7 src",
+    "coverage": "phpunit --coverage-text",
+    "test": "phpunit --testdox"
+  },
+  "minimum-stability": "stable"
+}
